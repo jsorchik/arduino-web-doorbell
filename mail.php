@@ -1,5 +1,5 @@
 <?php
-	$threshold = 69;
+	$magicWord = 69;
 	$messageString = "DING DONG!"; //default value
 	
 	echo "<html><head></head><body>\n";
@@ -11,14 +11,16 @@
 			$messageString = $value;
 		}
 	}
-	$stamp = date('Y-m-d-Gis-e');
-	echo "";
-	if($sendIt == $threshold){
+	
+	$stamp = date('Y-m-d-Gis');
+	
+	if($sendIt == $magicWord){
 		//send_mail("jsorchik@gmail.com", " Ding Dong", $messageString);
 	}
 	else{
-		echo "<p> sendIt=$sendIt string=$messageString date=$stamp waiting patiently...</p>\n";
+		echo "<p> sendIt=$sendIt string=$messageString date=$stamp </p>\n";
 	}
+	
 	echo "</body></html>\n";
 	end;
 
