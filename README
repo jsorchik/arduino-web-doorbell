@@ -1,3 +1,13 @@
 README file for the Arduino wireless, internet enabled, photographic doorbell project....
 
-Nothing to see here. yet...
+work in progress...
+
+mail.php:
+PHP script runs on remote webserver and can be used to trigger an email message with custom text and timestamp
+
+doorbell.pde:
+sketch interfaces arduino (with eth shield) with an everyday wireless doorbell buzzer so when the doorbell rings, the arduino sends the trigger to the webserver
+
+
+Future enhancements:
+snap a photo and upload/email when doorbell is buzzed
