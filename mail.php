@@ -14,14 +14,14 @@ echo "<html><head></head><body>\n";
 	
 	$stamp = date('Y-m-d-Gis');
 	
+echo "<p> cmd=$cmd string=$messageString date=$stamp </p>\n";
+
 	if($cmd == $magicWord){
 		//send_mail("jsorchik@gmail.com", " Ding Dong", $messageString);
 	}
-	else{
-echo "<p> cmd=$cmd string=$messageString date=$stamp </p>\n";
-	}
 	
 echo "</body></html>\n";
+	
 	end;
 
 	Function send_mail($to, $subject, $message)
